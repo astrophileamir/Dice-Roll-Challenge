@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .dice {
+            font-size: 50px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .roll-container {
+            margin-top: 20px;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dice Roll Challenge</h1>
+    <div class="roll-container">
+        <div id="playerDice" class="dice">🎲</div>
+        <div id="computerDice" class="dice">🎲</div>
+    </div>
+    <button id="rollButton" class="button">Roll the Dice</button>
+    <div class="result" id="result"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>
